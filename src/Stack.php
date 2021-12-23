@@ -2,22 +2,22 @@
 
 namespace Hexlet\Phpunit\Stack;
 
-function make()
+function make(): array
 {
     return [];
 }
 
-function isEmpty($stack)
+function isEmpty(array $stack): bool
 {
     return count($stack) === 0;
 }
 
-function push(&$stack, $element)
+function push(array &$stack, mixed $element): void
 {
     array_push($stack, $element);
 }
 
-function pop(&$stack)
+function pop(array &$stack): array
 {
     if (isEmpty($stack)) {
         throw new \Exception("Stack is empty!");
