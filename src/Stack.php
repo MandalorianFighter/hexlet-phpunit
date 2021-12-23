@@ -12,12 +12,12 @@ function isEmpty(array $stack): bool
     return count($stack) === 0;
 }
 
-function push(array &$stack, mixed $element): void
+function push(array &$stack, string $element): void
 {
     array_push($stack, $element);
 }
 
-function pop(array &$stack): array
+function pop(array &$stack): string
 {
     if (isEmpty($stack)) {
         throw new \Exception("Stack is empty!");
