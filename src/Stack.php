@@ -19,7 +19,7 @@ function push(&$stack, $element)
 
 function pop(&$stack)
 {
-    if(isEmpty($stack)) {
+    if (isEmpty($stack)) {
         throw new \Exception("Stack is empty!");
     }
     return array_pop($stack);

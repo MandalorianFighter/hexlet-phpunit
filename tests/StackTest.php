@@ -1,9 +1,12 @@
 <?php
 
-require "src/Stack.php";
-require "vendor/autoload.php";
+// phpcs:disable
+
+require("src/Stack.php");
+require("vendor/autoload.php");
 
 use PHPUnit\Framework\TestCase;
+
 use Hexlet\Phpunit\Stack;
 
 class StackTest extends TestCase
@@ -40,3 +43,5 @@ class StackTest extends TestCase
         Stack\pop($stack);
     }
 }
+
+// phpcs:enable
