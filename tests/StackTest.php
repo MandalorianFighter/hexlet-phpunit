@@ -1,7 +1,7 @@
 <?php
 
-require("src/Stack.php");
-require("vendor/autoload.php");
+require "src/Stack.php";
+require "vendor/autoload.php";
 
 use PHPUnit\Framework\TestCase;
 use Hexlet\Phpunit\Stack;
